@@ -1,17 +1,29 @@
 {
-  "name": "cypress-framework",
+  "name": "cypress-cucumber",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cypress framework with cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress open"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edusoftpro/cypress-cucumber.git"
+  },
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edusoftpro/cypress-cucumber/issues"
+  },
+  "homepage": "https://github.com/edusoftpro/cypress-cucumber#readme",
   "devDependencies": {
-    "cypress": "^12.16.0",
-    "eslint": "^8.43.0",
-    "eslint-plugin-cypress": "^2.13.3"
+    "@badeball/cypress-cucumber-preprocessor": "18.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "2.2.0",
+    "cypress": "12.14.0",
+    "esbuild": "0.18.10",
+    "eslint": "8.43.0",
+    "eslint-plugin-cypress": "2.13.3",
+    "playwright-webkit": "1.35.1"
+  },
+  "dependencies": {
   }
 }
