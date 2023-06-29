@@ -23,11 +23,13 @@
   module.exports = defineConfig({
     e2e: {
       setupNodeEvents,
-      // specPattern: "cypress/e2e/d2/features/*.feature",
+      specPattern: "cypress/e2e/d2/features/*.feature",
       chromeWebSecurity: false,
       env: {
         allureReuseAfterSpec: true,
       },
+      experimentalRunAllSpecs: true,
+      experimentalWebKitSupport: true,
     },
   });
 }
